@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ninga-gato</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+            $('img').click(function() {
+                var src1 = $(this).attr("src");
+                $(this).attr("src", $(this).attr("src-2"));
+                $(this).attr("src-2", src1);
+            });
+        });
+    </script>
+    <link rel="stylesheet" type="text/css" href="gato.css">
+
+</head>
+
+<body>
+    <div class="images">
+        <div><img src="ninja0.png" src-2="cat0.png" src-3="" /></div>
+        <div><img src="ninja1.png" src-2="cat1.png" src-3="" /></div>
+        <div><img src="ninja2.png" src-2="cat2.png" src-3="" /></div>
+        <div><img src="ninja3.png" src-2="cat3.png" src-3="" /></div>
+        <div><img src="ninja4.png" src-2="cat4.png" src-3="" /></div>
+    </div>
+</body>
+
+</html>
